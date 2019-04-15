@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="col-12">
                         <div class="col-lg-8 d-flex material-box login-form bg-white shadow rounded">
-                            <form class="ml-2 mr-2 mt-4 mb-5 w-100" id="logar" name="logar" method="POST" @submit.prevent="enviar()">
+                            <form class="ml-2 mr-2 mt-4 mb-5 w-100" method="POST" @submit.prevent="enviar()">
                                 <h1 class="h3 mb-2 text-primary">Login</h1>
                                 <hr class="hr"/>
                                 <div class="input-group mb-3">
@@ -60,7 +60,10 @@
                             text: data._token
                         });
                     } else {
-                        return
+                        swal({
+                            title: "Algo errado não estar certo",
+                            icon: "error"
+                        });
                     }
                 });
             }
