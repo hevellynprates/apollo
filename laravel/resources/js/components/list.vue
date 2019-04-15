@@ -1,21 +1,41 @@
 <template>
-    <div>
+    <div class="main">
         <section class="webdesigntuts-workshop">
             <form action="" @submit.prevent="start()" method="GET">
                 <button>Iniciar</button>
             </form>
         </section>
         <section class="listagem" v-show="listagem.length">
-            {{listagem}}
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8 mb-4">
+                        <table class="table table-hover table-bordered bg-light rounded overflow-hidden">
+                            <thead>
+                            <tr>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Sigla</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr v-for="estados in listagem">
+                                <td>{{estados.nome}}</td>
+                                <td>{{estados.sigla}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </template>
 
 <script>
     import swal from 'sweetalert';
+
     export default {
         name: "list",
-        data: function (){
+        data: function () {
             return {
                 listagem: []
             }
@@ -23,8 +43,8 @@
         methods: {
             start: function () {
                 const self = this;
-                $.get("https://cors-anywhere.herokuapp.com/http://desenvolvertecnologia.com/api/public/list", function( data ) {
-                    if (data){
+                $.get("https://cors-anywhere.herokuapp.com/http://desenvolvertecnologia.com/api/public/list", function (data) {
+                    if (data) {
                         self.listagem = data
                     } else {
                         swal({
@@ -39,6 +59,11 @@
 </script>
 
 <style scoped>
+    .main {
+        background: #151515;
+        background: linear-gradient(#1b1b1b, #111);
+        min-height: 100vh   ;
+    }
     .swal-text {
         background-color: #FEFAE3;
         padding: 17px;
@@ -50,26 +75,18 @@
     }
 
     .webdesigntuts-workshop {
-        background: #151515;
-        height: 100%;
-        position: absolute;
         text-align: center;
-        width: 100%;
     }
 
     .webdesigntuts-workshop form {
         animation: glow 800ms ease-out infinite alternate;
-        background: #111;
-        background: linear-gradient(#1b1b1b, #111);
         border: 1px solid #000;
         border-radius: 5px;
         box-shadow: inset 0 0 0 1px #272727;
         display: inline-block;
         font-size: 0px;
-        margin: 150px auto 0;
+        margin: 150px auto 40px;
         padding: 20px;
-        position: relative;
-        z-index: 1;
     }
 
     .webdesigntuts-workshop button {
@@ -111,11 +128,11 @@
     @keyframes glow {
         0% {
             border-color: #393;
-            box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+            box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000;
         }
         100% {
             border-color: #6f6;
-            box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+            box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000;
         }
     }
 </style>

@@ -1778,6 +1778,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "list",
@@ -6349,7 +6368,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.swal-text[data-v-200b772e] {\n    background-color: #FEFAE3;\n    padding: 17px;\n    border: 1px solid #F0E1A1;\n    display: block;\n    margin: 22px;\n    text-align: center;\n    color: #61534e;\n}\n.webdesigntuts-workshop[data-v-200b772e] {\n    background: #151515;\n    height: 100%;\n    position: absolute;\n    text-align: center;\n    width: 100%;\n}\n.webdesigntuts-workshop form[data-v-200b772e] {\n    -webkit-animation: glow-data-v-200b772e 800ms ease-out infinite alternate;\n            animation: glow-data-v-200b772e 800ms ease-out infinite alternate;\n    background: #111;\n    background: linear-gradient(#1b1b1b, #111);\n    border: 1px solid #000;\n    border-radius: 5px;\n    box-shadow: inset 0 0 0 1px #272727;\n    display: inline-block;\n    font-size: 0px;\n    margin: 150px auto 0;\n    padding: 20px;\n    position: relative;\n    z-index: 1;\n}\n.webdesigntuts-workshop button[data-v-200b772e] {\n    background: #222;\n    background: linear-gradient(#333, #222);\n    box-sizing: border-box;\n    border: 1px solid #444;\n    border-radius: 5px;\n    box-shadow: 0 2px 0 #000;\n    color: #fff;\n    display: block;\n    font-family: 'Cabin', helvetica, arial, sans-serif;\n    font-size: 13px;\n    font-weight: 400;\n    height: 40px;\n    line-height: 40px;\n    margin: 0;\n    padding: 0;\n    position: relative;\n    text-shadow: 0 -1px 0 #000;\n    width: 130px;\n}\n.webdesigntuts-workshop button[data-v-200b772e]:hover,\n.webdesigntuts-workshop button[data-v-200b772e]:focus {\n    background: #292929;\n    background: linear-gradient(#393939, #292929);\n    color: #5f5;\n    outline: none;\n}\n.webdesigntuts-workshop button[data-v-200b772e]:active {\n    background: #292929;\n    background: linear-gradient(#393939, #292929);\n    box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;\n    top: 1px;\n}\n@-webkit-keyframes glow-data-v-200b772e {\n0% {\n        border-color: #393;\n        box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;\n}\n100% {\n        border-color: #6f6;\n        box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;\n}\n}\n@keyframes glow-data-v-200b772e {\n0% {\n        border-color: #393;\n        box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;\n}\n100% {\n        border-color: #6f6;\n        box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;\n}\n}\n", ""]);
+exports.push([module.i, "\n.main[data-v-200b772e] {\n    background: #151515;\n    background: linear-gradient(#1b1b1b, #111);\n    min-height: 100vh   ;\n}\n.swal-text[data-v-200b772e] {\n    background-color: #FEFAE3;\n    padding: 17px;\n    border: 1px solid #F0E1A1;\n    display: block;\n    margin: 22px;\n    text-align: center;\n    color: #61534e;\n}\n.webdesigntuts-workshop[data-v-200b772e] {\n    text-align: center;\n}\n.webdesigntuts-workshop form[data-v-200b772e] {\n    -webkit-animation: glow-data-v-200b772e 800ms ease-out infinite alternate;\n            animation: glow-data-v-200b772e 800ms ease-out infinite alternate;\n    border: 1px solid #000;\n    border-radius: 5px;\n    box-shadow: inset 0 0 0 1px #272727;\n    display: inline-block;\n    font-size: 0px;\n    margin: 150px auto 40px;\n    padding: 20px;\n}\n.webdesigntuts-workshop button[data-v-200b772e] {\n    background: #222;\n    background: linear-gradient(#333, #222);\n    box-sizing: border-box;\n    border: 1px solid #444;\n    border-radius: 5px;\n    box-shadow: 0 2px 0 #000;\n    color: #fff;\n    display: block;\n    font-family: 'Cabin', helvetica, arial, sans-serif;\n    font-size: 13px;\n    font-weight: 400;\n    height: 40px;\n    line-height: 40px;\n    margin: 0;\n    padding: 0;\n    position: relative;\n    text-shadow: 0 -1px 0 #000;\n    width: 130px;\n}\n.webdesigntuts-workshop button[data-v-200b772e]:hover,\n.webdesigntuts-workshop button[data-v-200b772e]:focus {\n    background: #292929;\n    background: linear-gradient(#393939, #292929);\n    color: #5f5;\n    outline: none;\n}\n.webdesigntuts-workshop button[data-v-200b772e]:active {\n    background: #292929;\n    background: linear-gradient(#393939, #292929);\n    box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;\n    top: 1px;\n}\n@-webkit-keyframes glow-data-v-200b772e {\n0% {\n        border-color: #393;\n        box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000;\n}\n100% {\n        border-color: #6f6;\n        box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000;\n}\n}\n@keyframes glow-data-v-200b772e {\n0% {\n        border-color: #393;\n        box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000;\n}\n100% {\n        border-color: #6f6;\n        box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000;\n}\n}\n", ""]);
 
 // exports
 
@@ -37887,7 +37906,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "main" }, [
     _c("section", { staticClass: "webdesigntuts-workshop" }, [
       _c(
         "form",
@@ -37917,11 +37936,53 @@ var render = function() {
         ],
         staticClass: "listagem"
       },
-      [_vm._v("\n        " + _vm._s(_vm.listagem) + "\n    ")]
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row justify-content-center" }, [
+            _c("div", { staticClass: "col-8 mb-4" }, [
+              _c(
+                "table",
+                {
+                  staticClass:
+                    "table table-hover table-bordered bg-light rounded overflow-hidden"
+                },
+                [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c(
+                    "tbody",
+                    _vm._l(_vm.listagem, function(estados) {
+                      return _c("tr", [
+                        _c("td", [_vm._v(_vm._s(estados.nome))]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(estados.sigla))])
+                      ])
+                    }),
+                    0
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Estado")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Sigla")])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
