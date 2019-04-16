@@ -17,3 +17,10 @@ Route::get('/', function () {
 Route::get('list', function (){
     return view('list');
 });
+Route::post('save', function (\Illuminate\Http\Request $request){
+    $dados = $request->post('dados');
+    foreach ($dados as $estados){
+        \App\Estados::create($estados);
+    }
+    return response('', 204);
+});

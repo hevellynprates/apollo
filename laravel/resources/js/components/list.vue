@@ -42,10 +42,16 @@
         },
         methods: {
             start: function () {
+              $.ajaxSetup({
+                headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+              });
                 const self = this;
                 $.get("https://cors-anywhere.herokuapp.com/http://desenvolvertecnologia.com/api/public/list", function (data) {
                     if (data) {
                         self.listagem = data
+                        $.post('save', {dados: data})
                     } else {
                         swal({
                             title: "Algo errado não estar certo",
